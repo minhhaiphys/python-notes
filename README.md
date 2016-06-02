@@ -1,2 +1,2 @@
-# HelloGithub
-A test repository for messing around with Github
+# python-notes
+My notes on Python and Git
