@@ -24,3 +24,45 @@ git add <files>
 # See the differences
 git diff [--staged]
 
+# Commit
+# [-a]: add all tracked files
+# [-m]: add a message
+# [-v]: choose commits on the go
+git commit [-v] [-a]
+
+# Remove a file out of staged area
+git rm --cached <filename>
+
+# Rename a file
+git mv <oldname> <newname>
+
+# See history
+# [-p] [-num]: See details
+# [--stat]: short report
+# [--pretty]: format
+# [--since = 2.weeks]: see recent changes
+git log
+
+# Discard changes (not yet staged)
+git checkout -- <filename>
+
+# REMOTE
+
+# List remove repos
+git remote -v
+
+# Add a remote repo
+git remote add <name> <url>
+
+# Get data from remote
+git fetch <remote-name>
+
+# Get data and merge into local repo
+git pull
+
+# Push back to server repo
+git push <server> <branch>
+
+# Remove a remote repo
+git remote rm <repo>
+
