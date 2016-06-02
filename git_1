@@ -1,1 +1,26 @@
-How to use Git
+# How to use Git
+
+# Set up identity
+git config --global user.name "minhhai"
+git config --global user.email "mn455@cornell.edu"
+
+# Set up default editor to Sublime Text
+git config --global core.editor subl
+
+# Check the settings
+git config --list
+
+# Clone an existing project online
+git clone https://github.com/minhhaiphys/xyz.git <new directory name>
+
+# Check status
+git status [-s]
+
+# Stage or add files
+git add <files>
+
+# List of ignore file in .gitignore
+
+# See the differences
+git diff [--staged]
+
