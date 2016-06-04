@@ -10,6 +10,9 @@ git config --global core.editor subl
 # Check the settings
 git config --list
 
+# See the local config file
+cat .git/config
+
 # Clone an existing project online
 git clone https://github.com/minhhaiphys/xyz.git <new directory name>
 
@@ -48,7 +51,7 @@ git checkout -- <filename>
 
 # REMOTE
 
-# List remove repos
+# List remote repos
 git remote -v
 
 # Add a remote repo
@@ -65,4 +68,26 @@ git push <server> <branch>
 
 # Remove a remote repo
 git remote rm <repo>
+
+# Show the last commit
+git show
+
+# List all branches
+git branch
+[-r]: remote branches
+# Make branch
+git branch <branch name> <start-point>
+
+# Delete branch
+git branch -d <branch>
+[-D]: Force delete
+
+# Switch to branch
+git checkout <branch>
+
+# Create new branch and switch to it
+git checkout -b <new> <start-point>
+
+# Merge branchA into the current branch
+git merge <branchA>
 
