@@ -1,3 +1,22 @@
+### MATPLOTLIB STYLE SHEET - PUBLICATON FORMAT
+# FEATURES: Thick lines, large and bold fontface, no grid
+
+# USAGE: 
+# import matplotlib.pyplot as plt
+# plt.style.use('./publication_01.mplstyle')
+
+# DYNAMIC STYLING:
+# import matplotlib as mpl
+# mpl.rc('figure', facecolor='white')
+# mpl.rc('lines', linewidth=4, marker='o', markersize=10)
+# mpl.rc('font', size=18, weight='bold')
+# mpl.rc('axes', linewidth=2, grid=False, labelsize='large', labelweight='bold')
+# mpl.rc('legend', frameon=True, fancybox=True, fontsize='large')
+# mpl.rc('xtick', labelsize = 'medium')
+# mpl.rc('ytick', labelsize = 'medium')
+
+# -------------------------------------------------
+
 ### MATPLOTLIBRC FORMAT
 
 # This is a sample matplotlib configuration file - you can find a copy
