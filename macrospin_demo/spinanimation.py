@@ -140,9 +140,15 @@ class SpinAnimation(object):
         pass
         return True
 
-    def animate(self):
-        return animation.FuncAnimation(self.fig,self.plot,np.arange(1,len(self.xs)+1),init_func=self.clear,
-                                        interval = 1000/self.fps,repeat=False,blit=True)
+    def animate(self,blit=False):
+        self.animation = animation.FuncAnimation(self.fig,self.plot,np.arange(1,len(self.xs)+1),init_func=self.clear,
+                                        interval = 1000/self.fps,repeat=False,blit=blit)
+        plt.show()
+
+    def save_movie(self,fname,extra_args=['-vcodec','libx264']):
+        """ Save animation to a mp4 movie file """
+        writer = animation.writers['ffmpeg'](fps=self.fps,extra_args=extra_args)
+        moview.save(fname,writer = writer)
 
 # Test
 if __name__=="__main__":
