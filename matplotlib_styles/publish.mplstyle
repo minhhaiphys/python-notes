@@ -343,15 +343,15 @@ legend.markerscale   : 1.0    # the relative size of legend markers vs. original
 #legend.borderaxespad : 0.5   # the border between the axes and legend edge in fraction of fontsize
 #legend.columnspacing : 2.    # the border between the axes and legend edge in fraction of fontsize
 legend.shadow        : False
-legend.frameon       : False   # whether or not to draw a frame around legend
-legend.framealpha    : None    # opacity of of legend frame
+legend.frameon       : True   # whether or not to draw a frame around legend
+legend.framealpha    : 0.5    # opacity of of legend frame
 #legend.scatterpoints : 3 # number of scatter points
 
 ### FIGURE
 # See http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
 figure.titlesize : large     # size of the figure title
 figure.titleweight : bold   # weight of the figure title
-figure.figsize   : 8, 6    # figure size in inches
+figure.figsize   :  6, 4    # figure size in inches
 #figure.dpi       : 80      # figure dots per inch
 #figure.facecolor : white    # figure facecolor; 0.75 is scalar gray
 #figure.edgecolor : white   # figure edgecolor
