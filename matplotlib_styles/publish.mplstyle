@@ -292,8 +292,8 @@ axes.formatter.use_mathtext : True # When True, use mathtext for scientific
                                             # as list of string colorspecs:
                                             # single letter, long name, or
                                             # web-style hex
-#axes.xmargin        : 0  # x margin.  See `axes.Axes.margins`
-#axes.ymargin        : 0  # y margin See `axes.Axes.margins`
+#axes.xmargin        : 0.1  # x margin.  See `axes.Axes.margins`
+#axes.ymargin        : 0.1  # y margin See `axes.Axes.margins`
 
 polaraxes.grid      : False    # display grid on polar axes
 #axes3d.grid         : True    # display grid on 3d axes
@@ -351,7 +351,7 @@ legend.framealpha    : 0.5    # opacity of of legend frame
 # See http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
 figure.titlesize : large     # size of the figure title
 figure.titleweight : bold   # weight of the figure title
-figure.figsize   :  6, 4    # figure size in inches
+figure.figsize   :  8, 6    # figure size in inches
 #figure.dpi       : 80      # figure dots per inch
 figure.facecolor : white    # figure facecolor; 0.75 is scalar gray
 #figure.edgecolor : white   # figure edgecolor
